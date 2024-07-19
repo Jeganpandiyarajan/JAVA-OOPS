@@ -1,0 +1,38 @@
+class Box{
+    int width;
+    int height;
+    int depth;
+    
+    void fun(int width,int height,int depth){
+        this.width=width;
+        this.height=height;
+        this.depth=depth;
+    }
+    
+    int getWidth(){
+        return width;
+    }
+    
+    int getHeight(){
+        return height;
+    }
+    int getDepth(){
+        return depth;
+    }
+    int getVol(){
+        return width*height*depth;
+        
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		Box obj=new Box();
+		obj.fun(23,45,10);
+		System.out.println("Box Width :"+ obj.getWidth());
+		System.out.println("Box Height :"+ obj.getHeight());
+		System.out.println("Box depth :"+ obj.getDepth());
+		System.out.print("Box Volume :"+ obj.getVol());
+	}
+}
