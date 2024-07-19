@@ -1,0 +1,48 @@
+class Bank{
+    int rateOfInterst(){
+        return 0;
+    }
+    
+}
+
+class SBI extends Bank{
+    @Override int rateOfInterst(){
+        return 78;
+    }
+}
+
+class ICIC extends Bank{
+    @Override int rateOfInterst(){
+        return 89;
+    }
+}
+
+class AXIS extends Bank{
+    @Override int rateOfInterst(){
+        return 34;
+    }
+}
+
+class RES extends Bank{
+    @Override int rateOfInterst(){
+        return 58;
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+        Bank b;
+		b=new SBI();
+		System.out.println("RATE OF INTERST OF SBI BANK :"+b.rateOfInterst());
+		
+		b=new ICIC();
+		System.out.println("RATE OF INTERST OF ICIC BANK :"+b.rateOfInterst());
+		    
+		b=new AXIS();
+		System.out.println("RATE OF INTERST OF AXIS BANK :"+b.rateOfInterst());
+		
+		b=new RES();
+		System.out.print("RATE OF INTERST OF RES BANK :"+b.rateOfInterst());
+	}
+}
