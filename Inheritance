@@ -1,0 +1,50 @@
+class Person{
+    String name;
+    
+    void setName(String name){
+        this.name=name;
+    }
+    
+    void getName(){
+        System.out.print("NAME OF THE PERSON IS :"+name);
+    }
+}
+
+
+class Employe extends Person{
+    double aSalary;
+    int yoew;
+    String natNum;
+    
+    void sal1(double aSalary,int yoew,String natNum){
+        this.aSalary=aSalary;
+        this.yoew=yoew;
+        this.natNum=natNum;
+    }
+    
+    double getAsal(){
+        return aSalary;
+    }
+    int yearOf(){
+        return yoew;
+    }
+    void getNat(){
+        System.out.print("National Number :"+natNum);
+    }
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		Employe obj=new Employe();
+		obj.sal1(9000000d,2024,"A3490");
+		obj.setName("JEGAN");
+		System.out.println();
+		obj.getName();
+		System.out.println();
+        System.out.println("Annual salary :"+obj.getAsal());
+		System.out.println("Year of joining :"+obj.yearOf());
+        obj.getNat();
+	}
+}
